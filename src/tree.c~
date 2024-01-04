@@ -37,7 +37,10 @@ node* Insert(node* root, int data)
         {
             root->right = Insert(root->right, data);
         }
-
+        else
+        {
+            fprintf(stderr, "Error: data is not valid\n");
+        }
     }
     return root;
 }
