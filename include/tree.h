@@ -13,11 +13,12 @@ typedef struct tree {
     struct node* root;
 }tree;
 
-node* Initilization(node* root,int data);
+
 node* CreateNode(int data);
 node* Insert(node* root, int data);
 void Delete(node* root);
-void Print(node* root);
+void Print(node* root, int data);
+void Printtree(node* root);
 
 #endif
 
